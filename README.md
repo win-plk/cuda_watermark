@@ -13,6 +13,9 @@ CUDA might not work by the following cause
   - Download and Install [NVIDIA Driver](https://www.nvidia.com/Download/index.aspx)
 
 ## How to compile
+Before compile, you need to copy ___opencv_world341.dll___ from \_\_somewhere\_\_\opencv\build\x64\vc14\bin to the working directory
+
+Then, open __Command Prompt__, change to working directory and type:
 ```
 nvcc -o watermark watermark.cu -I "__somewhere__\opencv\build\include" -l "__somewhere__\opencv\build\x64\vc14\lib\opencv_world341" 
 ```
